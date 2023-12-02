@@ -1,4 +1,4 @@
-export class Product {
+export interface IProductInOrder {
   _id: string
   id: number
   quantity: number
@@ -20,7 +20,7 @@ export class Product {
   CP: number
   category: string
   proveedor: string
-  skuProveedor: number
+  skuProveedor: string
   unit: string
   dimension: string
   desc: string
@@ -30,7 +30,7 @@ export class Product {
   IVASDP: number
   IVACP: number
   enabled: boolean
-  nameProveedor: number
+  nameProveedor: string
   status: Status
   stock: number
   dias: any
@@ -46,8 +46,9 @@ export class Product {
   quantityStep: any
   SPOPrice: any
   brand: any
-  businessType: string
+  businessType: any
   decimal: number
+  quantityOrder: number
 }
 
 export interface Status {}
